@@ -3,21 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Jasmine Nur Syamimi | Banking Graduate & Finance Operations</title>
+  <meta name="description" content="Portfolio of Jasmine Nur Syamimi, Bachelor of Banking graduate with finance operations experience at EPF Malaysia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <h1>Jasmine Sya</h1>
-      <p>Web Developer & Creative Thinker</p>
+      <p class="hello">Hi, I'm</p>
+      <h1>Jasmine Nur Syamimi</h1>
+      <p class="role">Banking graduate with hands-on finance operations experience at EPF Malaysia</p>
+      <p class="meta">Universiti Utara Malaysia &bull; Minor in Economic Management &bull; CGPA 3.55 &bull; Shah Alam, Selangor</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#experience" class="btn btn-ghost">View experience</a>
+      </div>
     </div>
   </header>
 
-  <nav class="navbar">
-    <div class="container">
-      <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
+  <nav class="navbar" aria-label="Main">
+    <div class="container nav-inner">
+      <span class="brand">JS</span>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#involvement">Involvement</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -26,59 +41,213 @@
 
   <main class="container">
     <section id="about" class="section">
-      <h2>About Me</h2>
+      <h2>About me</h2>
       <p>
-        Welcome to my portfolio! I'm a passionate web developer with a love for creating
-        beautiful, functional websites. I enjoy learning new technologies and solving
-        complex problems through creative coding solutions. When I'm not coding, you can
-        find me exploring new design trends and contributing to open-source projects.
+        I'm a Bachelor of Banking graduate from Universiti Utara Malaysia with a minor in
+        Economic Management. During my internship at Employees Provident Fund (EPF) Malaysia
+        I worked on account reconciliation, GL and BA matching, financial data verification
+        and payment operations using Microsoft Excel.
       </p>
+      <p>
+        Outside finance, I've led events as an emcee, worked as a secretariat and project
+        lead, represented my university in Korea, and voiced characters in an independent
+        animation. These experiences taught me to communicate clearly, coordinate with
+        stakeholders and adapt quickly. I'm looking to start my career in banking, financial
+        operations or business processes.
+      </p>
+      <div class="stats">
+        <div><strong>3.55</strong><span>CGPA, Bachelor of Banking</span></div>
+        <div><strong>4 months</strong><span>Finance internship at EPF</span></div>
+        <div><strong>8</strong><span>Leadership and event roles</span></div>
+        <div><strong>3.97</strong><span>Foundation CGPA, Director's Award</span></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <h3>Finance Intern, Financial Accounting Unit</h3>
+              <p class="org">Employees Provident Fund (EPF) Malaysia</p>
+            </div>
+            <p class="date">April 2026 - July 2026<br />Kwasa Damansara</p>
+          </div>
+          <ul>
+            <li>Managed General Ledger (GL) and Business Area (BA) reconciliation by analysing financial data, investigating discrepancies and matching accounts in Microsoft Excel.</li>
+            <li>Handled payment operations for cheque-to-telegraphic transfer cases, independently reviewing and validating transaction details to support accurate and compliant processing.</li>
+            <li>Coordinated the preparation and maintenance of finance documentation, including dividend and zakat data, to keep records accurate and support daily operations.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <h3>Barista (Part Time)</h3>
+              <p class="org">Zus Coffee</p>
+            </div>
+            <p class="date">August 2023 - January 2026<br />Subang Bestari, Shah Alam</p>
+          </div>
+          <ul>
+            <li>Operated the POS and processed cash, card and e-wallet transactions accurately during peak hours.</li>
+            <li>Managed orders, responded to customer needs and resolved service issues to keep the customer experience positive.</li>
+            <li>Worked with teammates to keep order preparation timely and the workplace clean and organised.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="subhead">Project</h3>
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Re-Write | Independent Animation Project</h3>
+            <p class="org">Voice actor</p>
+          </div>
+          <p class="date">January 2025 - Present</p>
+        </div>
+        <ul>
+          <li>Worked with the creator to interpret scripts and deliver voice recordings that match the creative direction and character requirements.</li>
+          <li>Used vocal control and expressive delivery to bring characters to life and support the storytelling.</li>
+          <li>Adjusted tone and performance based on creative feedback.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="card-grid two">
+        <article class="card">
+          <h3>Bachelor of Banking with Honours</h3>
+          <p class="org">Universiti Utara Malaysia, Kedah</p>
+          <p class="date">2026 &bull; CGPA 3.55/4.00 &bull; Minor in Economic Management</p>
+          <p>A programme recognised by the Asian Institute of Chartered Bankers (AICB) and the Association to Advance Collegiate Schools of Business (AACSB).</p>
+        </article>
+        <article class="card">
+          <h3>Foundation Studies in Management</h3>
+          <p class="org">Universiti Utara Malaysia, Kedah</p>
+          <p class="date">2022 &bull; CGPA 3.97/4.00</p>
+          <p>Director's Award recipient for all semesters for outstanding academic performance.</p>
+        </article>
+        <article class="card">
+          <h3>Sijil Pelajaran Malaysia</h3>
+          <p class="org">SM Teknik Kuantan, Pahang</p>
+          <p class="date">2020</p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Certifications</h3>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Generative AI Foundation</h3>
+          <p class="org">Certiport (Pearson Education), 2026</p>
+          <p>AI applications, prompt design, responsible AI practices and workplace use.</p>
+        </article>
+        <article class="card">
+          <h3>Islamic Leadership &amp; Strategic Decision-Making</h3>
+          <p class="org">Talentbank, 2026</p>
+          <p>Leadership, strategic thinking, ethical decision-making and professional judgment.</p>
+        </article>
+        <article class="card">
+          <h3>Career Readiness Soft-Skill Programme</h3>
+          <p class="org">Talentbank, 2026</p>
+          <p>Professional communication, interpersonal skills and workplace professionalism.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="involvement" class="section">
+      <h2>Involvement</h2>
+      <p class="lead">Roles where I led, organised or represented, filter by where they happened.</p>
+      <div class="filters" role="group" aria-label="Filter involvement">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="epf">EPF</button>
+        <button class="filter" data-filter="uum">UUM</button>
+      </div>
+      <div class="card-grid" id="involvement-grid">
+        <article class="card" data-group="epf">
+          <h3>Photographer</h3>
+          <p class="org">EPF, 2026</p>
+          <p>Directed event photography for the IFAMS Modernisation initiative and curated coverage for corporate communication.</p>
+        </article>
+        <article class="card" data-group="epf">
+          <h3>Emcee</h3>
+          <p class="org">EPF, 2026</p>
+          <p>Led on-stage segments, announcements and prize-giving, and kept the audience engaged.</p>
+        </article>
+        <article class="card" data-group="epf">
+          <h3>Secretariat</h3>
+          <p class="org">FASTRAC, EPF, 2026</p>
+          <p>Managed presentation materials and technical flow, and coordinated with representatives from LHDN, EY and PwC.</p>
+        </article>
+        <article class="card" data-group="uum">
+          <h3>Programme Organising Committee</h3>
+          <p class="org">SULAM Seminar in Banking with Bank Muamalat, 2025</p>
+          <p>Planned a Gold-i investment talk, handled protocol and programme flow, and served as emcee.</p>
+        </article>
+        <article class="card" data-group="uum">
+          <h3>Secretary</h3>
+          <p class="org">Inapan Siswa Bank Muamalat, UUM, 2025</p>
+          <p>Managed documentation, correspondence and committee communication for student activities.</p>
+        </article>
+        <article class="card" data-group="uum">
+          <h3>Secretariat</h3>
+          <p class="org">38th Convocation Festival, UUM, 2025</p>
+          <p>Coordinated logistics, documentation and operations for a large-scale university event.</p>
+        </article>
+        <article class="card" data-group="uum">
+          <h3>Research Project Lead</h3>
+          <p class="org">SULAM International Trade &amp; Finance, UUM, 2025</p>
+          <p>Researched financing accessibility for micro and small enterprises: designed surveys, interviewed SME owners and evaluated government and private financing support.</p>
+        </article>
+        <article class="card" data-group="uum">
+          <h3>Student Delegate</h3>
+          <p class="org">UUM Delegation to the Republic of Korea, 2024</p>
+          <p>Represented UUM in an international mobility programme with academic and cultural exchange.</p>
+        </article>
+      </div>
     </section>
 
     <section id="skills" class="section">
       <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>HTML</h3>
-          <p>Semantic markup and accessibility</p>
-        </div>
-        <div class="skill-card">
-          <h3>CSS</h3>
-          <p>Responsive design and animations</p>
-        </div>
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-          <p>Interactivity and DOM manipulation</p>
-        </div>
-        <div class="skill-card">
-          <h3>Web Design</h3>
-          <p>UI/UX principles and best practices</p>
-        </div>
-        <div class="skill-card">
-          <h3>Git & GitHub</h3>
-          <p>Version control and collaboration</p>
-        </div>
-        <div class="skill-card">
-          <h3>Problem Solving</h3>
-          <p>Debugging and optimization</p>
-        </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Financial operations</h3>
+          <ul class="tags"><li>Account reconciliation</li><li>GL &amp; BA matching</li><li>Financial data verification</li><li>Payment operations</li></ul>
+        </article>
+        <article class="card">
+          <h3>Microsoft Office</h3>
+          <ul class="tags"><li>Excel</li><li>Word</li><li>PowerPoint</li><li>Outlook</li></ul>
+        </article>
+        <article class="card">
+          <h3>AI tools</h3>
+          <ul class="tags"><li>ChatGPT</li><li>Claude</li><li>Microsoft Copilot</li></ul>
+        </article>
+        <article class="card">
+          <h3>Communication</h3>
+          <ul class="tags"><li>Public speaking</li><li>Presentation</li><li>Customer service</li></ul>
+        </article>
+        <article class="card">
+          <h3>Interpersonal</h3>
+          <ul class="tags"><li>Analytical thinking</li><li>Attention to detail</li><li>Adaptability</li><li>Team collaboration</li></ul>
+        </article>
       </div>
     </section>
 
     <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>I'd love to hear from you! Feel free to reach out through any of these channels:</p>
+      <p>I'm open to graduate roles in banking, financial operations and business processes. Send me a message and I'll reply as soon as I can.</p>
       <div class="contact-links">
-        <a href="mailto:hello@example.com" class="contact-button">Email Me</a>
-        <a href="https://github.com" class="contact-button" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" class="contact-button" target="_blank">LinkedIn</a>
+        <a href="mailto:jasminesya03@gmail.com" class="btn btn-primary">Email me</a>
+        <a href="https://www.linkedin.com/in/jasmine-nur-syamimi-9b9b363a0" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="tel:+601112667019" class="btn btn-ghost">+60 11-1266 7019</a>
       </div>
+      <p class="note">References are available on request.</p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Van Gogh</p>
+      <p>&copy; 2026 Jasmine Nur Syamimi Bt Muhammad</p>
     </div>
   </footer>
 
